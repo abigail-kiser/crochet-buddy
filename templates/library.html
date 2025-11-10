@@ -5,4 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yarn Library</title>
+</head>
+
+<body>
+    <h1>Yarn Library</h1>
+    <ul>
+        {% for yarn in yarns %}
+            <li>
+                <h2>{{ yarn.id }}</h2>
+                <p>Color: {{ yarn.color }}</p>
+                <p>Weight: {{ yarn.weight.name }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
 </html>
